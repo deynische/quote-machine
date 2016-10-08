@@ -1,0 +1,35 @@
+body {
+  padding: 30px;
+  text-align: center;
+  background-color: #ddd;
+}
+#intro {
+  margin-bottom: 30px;
+}
+.quote__box {
+  margin-bottom: 30px;
+  padding: 30px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 3px 5px 2px #aaa;
+  -webkit-box-shadow: 0 3px 5px -8px #aaa;
+  box-shadow: 0 3px 5px 2px #aaa;
+}
+blockquote {
+  border: none;
+}
+.btn {
+  height: 50px;
+  width: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #fff;
+  background-color: #47e;
+}
+.btn:hover, btn:active, btn:focus {
+  color: #eee;
+  background-color: #259;
+}
