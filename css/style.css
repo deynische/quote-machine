@@ -29,7 +29,7 @@ blockquote {
   color: #fff;
   background-color: #47e;
 }
-.btn:hover, btn:active, btn:focus {
+.btn:hover, .btn:active, .btn:focus {
   color: #eee;
   background-color: #259;
 }
