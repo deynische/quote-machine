@@ -1,0 +1,9 @@
+//dictionaries
+var optional_set = ['during nights', 'every other day', 'everyday', 'frequently', 'in the morning', 'occasionally', 'on weekends', 'once in a blue moon', 'rarely', 'sometimes'];
+var verb_set1 = ['argue', 'ask', 'confess', 'dream', 'go', 'lie', 'plan', 'read', 'run', 'speak', 'study', 'think', 'wonder', 'write'];
+var verb_set2 = ['charm', 'collect', 'confront', 'console', 'crochet', 'draw', 'fight', 'fix', 'fly', 'launder', 'make', 'mug', 'name', 'polish', 'run', 'walk', 'wash'];
+var preposition_set = ['about', 'after', 'along', 'amid', 'before', 'by', 'for', 'like', 'upon', 'with'];
+var article_set = ['a', 'the'];
+var adjective_set = ['academic', 'aged', 'angry', 'biodegradable', 'bitter', 'colossal', 'crooked', 'delectable', 'distorted', 'dreadful', 'fair-trade', 'feisty', 'flamboyant', 'granular', 'groteque', 'illegal', 'insidious', 'juicy', 'lackluster', 'linear', 'lopsided', 'majestic', 'milky', 'oblong', 'overcooked', 'peaceful', 'pesky', 'pleasant', 'plump', 'posh', 'regal', 'scintillating', 'shady', 'silky', 'suspicious', 'useless', 'vivacious', 'waterlogged', 'weepy', 'wobbly'];
+var noun_set = ['afghan', 'answer', 'attack helicopter', 'banana', 'bee', 'burrito', 'cake', 'cat', 'chair', 'clock', 'cloud', 'desk fan', 'dust mite', 'gnome', 'hat', 'kangaroo', 'light bulb', 'painting', 'photo', 'pizza', 'projector', 'pug', 'quail', 'question', 'rat', 'salmon', 'silverfish', 'spider', 'stone', 'teapot', 'toaster', 'toilet', 'train', 'tree', 'truck', 'turkey', 'unicycle', 'watch', 'weasel', 'weevil'];
+var vowels = ['a', 'e', 'i', 'o']; //left out U due to weird sound rules
