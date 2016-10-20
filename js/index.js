@@ -1,3 +1,6 @@
+/* c9 ide error message fixes */
+/* global select_random, optional_set, verb_set1, verb_set2, preposition_set, adjective_set, noun_set, verbing, pluralize, article_set, a_or_an, capitalize */
+
 /* The sentence structure I will be using:
  * "Optional, I verb_present preposition article adjective noun verb_ing noun_plural."
  * ex: "Sometimes, I dream about a lopsided tree fighting toasters."
@@ -6,9 +9,14 @@
 //variables
 var optional, verb_present, verb_ing, preposition, article, adjective, noun, noun_plural, quote = "";
 
+//stash DOM elements into variables
+var btn_new = document.getElementById('new-quote');
+var btn_tweet = document.getElementById('tweet-quote');
+var quote_content = document.querySelector('p.quote');
+
 //random decide on optional phrase
 function option_random(array) {
-  var intro = ""
+  var intro = "";
   var coin = Math.round(Math.random());
   if (coin === 1) {
     intro = select_random(array);
@@ -45,15 +53,17 @@ function generate_quote() {
 //Twitter sharing
 function tweet_out() {
   var url = "https://twitter.com/intent/tweet?hashtags=deepthoughts&related=freecodecamp&text=";
-  var text = $(".quote").html();
+  var text = quote_content.innerHTML;
   url += text;
   return url;
 }
 
-//interactivity
-$("#new-quote").click(function() {
-  $(".quote").html(generate_quote());
-})
-$("#tweet-quote").click(function() {
+//interactivity!
+
+//attach events to buttons
+btn_new.addEventListener('click', function() {
+  quote_content.innerHTML = generate_quote();
+}, false);
+btn_tweet.addEventListener('click', function() {
   window.open(tweet_out());
-})
+}, false);

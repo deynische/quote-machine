@@ -1,3 +1,6 @@
+/* c9 ide error message fixes */
+/* global vowels */
+
 //grammar rule: a vs an
 function a_or_an(word) {
   var article = 'a';
@@ -25,7 +28,7 @@ function pluralize(noun) {
 //wrote crude fixes regarding doubling up and ing
 //example case: converting run to running
 function verbing(verb) {
-  lastLetter = verb[verb.length-1];
+  var lastLetter = verb[verb.length-1];
   if (lastLetter === 'e') {
     verb = verb.slice(0, -1);
     verb += 'ing';
@@ -39,7 +42,7 @@ function verbing(verb) {
 
 //captilize a sentence
 function capitalize(str) {
-  firstLetter = str[0];
+  var firstLetter = str[0];
   str = str.slice(1);
   str = firstLetter.toUpperCase() + str;
   return str;
